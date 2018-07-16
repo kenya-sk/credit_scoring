@@ -10,6 +10,7 @@ root/
 &emsp;│&emsp;├ previous_application.csv  
 &emsp;│&emsp;├ train_X.npy  
 &emsp;│&emsp;├ train_target.npy  
+&emsp;│&emsp;├ test.npy  
 &emsp;│&emsp;├ out_gbm.npy  
 &emsp;│&emsp;├ out_mpl.npy  
 &emsp;│&emsp;├ submission.csv  
