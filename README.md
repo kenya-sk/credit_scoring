@@ -1,3 +1,8 @@
+## Introduction
+This repository is credit scoring using data of Kaggle.  
+Competition name: Home Credit Default Risk  
+URL: https://www.kaggle.com/c/home-credit-default-risk
+
 ## Directory Structure
 root/  
 &emsp;├ all/  
@@ -12,7 +17,7 @@ root/
 &emsp;│&emsp;├ train_target.npy  
 &emsp;│&emsp;├ test.npy  
 &emsp;│&emsp;├ out_gbm.npy  
-&emsp;│&emsp;├ out_mpl.npy  
+&emsp;│&emsp;├ out_mlp.npy  
 &emsp;│&emsp;├ submission.csv  
 &emsp;│&emsp;└ tensor_model/  
 &emsp;│&emsp;&ensp;  
@@ -28,3 +33,9 @@ root/
 &emsp;&emsp;&emsp;&emsp;&emsp;├ model_lightgbm.py   
 &emsp;&emsp;&emsp;&emsp;&emsp;├ model_mlp.py  
 &emsp;&emsp;&emsp;&emsp;&emsp;└ submission.py  
+
+## Requirement
+* Python3
+* scikit-learn
+* LightGBM (https://github.com/Microsoft/LightGBM)
+* Tensor Flow
