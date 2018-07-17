@@ -62,4 +62,4 @@ Leared model save in all/tensor_model.
 The prediction of each model is saved in all/out_gbm and all/out_mlp.  
 
 ## Submission
-By executing ```src/model/submission.py```, the submission file saved in all directory.
+By executing ```src/model/submission.py```, the submission file saved in all/submission.csv.
