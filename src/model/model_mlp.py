@@ -132,20 +132,6 @@ def mlp_main(train_X_path, train_y_path, test_path, reuse_model_path, learning=F
             train_auc, val_auc = [], []
             n_rounds_not_improved = 0
             early_stopping_epochs = 3
-            # save weight
-            saver = tf.train.Saver()
-            # model exist: True or False
-            ckpt = tf.train.get_checkpoint_state(reuse_model_path)
-            if ckpt:
-                last_model = ckpt.model_checkpoint_path
-                print("START: Relearning")
-                print("LODE: {}".format(last_model))
-                saver.restore(sess, last_model)
-            else:
-                print("START: learning")
-                # initialize all variable
-                init = tf.group(tf.global_variables_initializer(), tf.local_variables_initializer())
-                sess.run(init)
             
             # hrad negative array
             hard_negative_X_arr = np.zeros((1, 286), dtype="float64")
